@@ -17,7 +17,7 @@ if errorlevel 1 (
 
 REM Check if required packages are installed
 echo Checking dependencies...
-python -c "import streamlit, pydub, librosa, numpy, scipy, matplotlib" >nul 2>&1
+python -c "import streamlit, pydub" >nul 2>&1
 if errorlevel 1 (
     echo.
     echo ERROR: Required packages are not installed
