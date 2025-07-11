@@ -147,7 +147,8 @@ def main():
                 tmp_input.write(audio_file.read())
                 input_path = tmp_input.name
                 
-            output_path = os.path.join(tempfile.gettempdir(), f"trimmed_audio.{output_format}")
+            base_name = os.path.splitext(os.path.basename(audio_file.name))[0]
+            output_path = os.path.join(tempfile.gettempdir(), f"trimmed_{base_name}.{output_format}")
             
             # Adaptive threshold detection
             if detection_method == "Adaptive (Recommended)":
@@ -221,9 +222,9 @@ def main():
                 # Download button
                 with open(output_path, "rb") as f:
                     st.download_button(
-                        label=f"📥 Download Trimmed Audio ({output_format.upper()})",
+                        label=f"💾 Download Trimmed Audio ({output_format.upper()})",
                         data=f,
-                        file_name=f"trimmed_audio.{output_format}",
+                        file_name=f"trimmed_{base_name}.{output_format}",
                         mime=f"audio/{output_format}"
                     )
                 
