@@ -113,7 +113,7 @@ def main():
     )
     
     # Trimming parameters
-    min_silence = st.sidebar.slider("Minimum silence to trim (ms)", 200, 3000, 500, 
+    min_silence = st.sidebar.slider("Minimum silence to trim (ms)", 100, 3000, 500, 
                                    help="Longer values = more aggressive trimming")
     
     if detection_method == "Manual Threshold":
