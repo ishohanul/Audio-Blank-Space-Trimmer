@@ -8,46 +8,93 @@ A professional-grade audio trimming application that intelligently removes silen
 - **Multiple Output Formats**: MP3, WAV, FLAC
 - **Audio Normalization**: Ensures consistent volume levels
 - **Visualization**: Shows detected silent regions
-- **Easy-to-use Web UI**: Built with Streamlit
+- **Modern Web UI**: Built with Flask and responsive design
+- **Cloud Ready**: Deployable on Vercel and other cloud platforms
 
-## 🚀 Installation
+## 🚀 Quick Start
+
+### Local Development
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ishohanul/Audio-Blank-Space-Trimmer.git
-   cd Audio-Blank-Space-Trimmer
+   git clone https://github.com/yourusername/Audio-Trimmer.git
+   cd Audio-Trimmer
    ```
+
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 🖥️ Usage
-Run the app locally:
-```bash
-streamlit run app.py
-```
+3. Run the app:
+   ```bash
+   python app.py
+   ```
 
-## 🌐 Free Deployment
-You can deploy this app for free using [Streamlit Community Cloud](https://streamlit.io/cloud):
-1. Push your code to a public GitHub repository.
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud) and sign in with GitHub.
-3. Click "New app", select your repo and branch, and deploy.
+4. Open your browser and go to `http://localhost:8080`
 
-## 📂 Supported Formats
+### Vercel Deployment
+For cloud deployment, see [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md) for detailed instructions.
+
+Quick deployment:
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+## 🌐 Supported Formats
 - **Input**: WAV, MP3, OGG, M4A, FLAC, MP4 (audio extraction)
 - **Output**: MP3, WAV, FLAC
 
 ## 🛠️ Core Libraries
-- Streamlit
-- Pydub
-- Librosa
-- NumPy
-- SciPy
-- Matplotlib
+- Flask (Web Framework)
+- Pydub (Audio Processing)
+- Librosa (Advanced Audio Analysis)
+- NumPy (Numerical Computing)
+- SciPy (Scientific Computing)
+- Matplotlib (Visualization)
+
+## 🔧 Advanced Features
+
+### Silence Detection Methods
+1. **Adaptive**: Automatically adjusts threshold based on audio characteristics
+2. **Manual**: User-defined threshold for precise control
+3. **Hybrid**: Combines multiple algorithms for optimal results
+
+### Processing Options
+- **Normalization**: Ensures consistent volume levels
+- **Noise Reduction**: Reduces background noise (experimental)
+- **Quality Settings**: Configurable output format and bitrate
+- **Gap Preservation**: Maintains natural speech patterns
+
+## 📊 Performance
+- **Processing Speed**: Real-time analysis with advanced algorithms
+- **Memory Efficient**: Optimized for large audio files
+- **Scalable**: Cloud-ready architecture
+
+## 🚀 Deployment Options
+
+### Vercel (Recommended)
+- Free tier available
+- Automatic scaling
+- Global CDN
+- Easy GitHub integration
+
+### Other Platforms
+- Heroku
+- Railway
+- DigitalOcean App Platform
+- AWS Lambda
 
 ## 🙏 Credits
-- Built by [Your Name]
+- Built with modern web technologies
 - Inspired by the open-source audio community
+- Powered by industry-standard audio processing libraries
 
 ## 📄 License
-MIT License 
+MIT License
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Support
+For deployment issues, check [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md)
+For general questions, open an issue on GitHub. 

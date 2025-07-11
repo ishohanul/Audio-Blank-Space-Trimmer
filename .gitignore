@@ -70,7 +70,7 @@ coverage.xml
 .DS_Store
 Thumbs.db
 
-# Streamlit and audio temp files
+# Audio temp files (processed files)
 *.wav
 *.mp3
 *.flac
@@ -86,8 +86,8 @@ Thumbs.db
 *.au
 *.raw
 *.mkv
-*.tmp
-*.log
+
+# Data files
 *.sqlite3
 *.db
 *.dat
@@ -110,13 +110,13 @@ Thumbs.db
 *.gz
 *.bz2
 *.xz
-*.bak
-*.swp
-*.swo
-temp/
-tmp/
 
-# Ignore local config
+# Environment and secrets
 .env
 .env.*
-secrets.toml 
+secrets.toml
+
+# Virtual environments
+venv/
+env/
+.venv/ 
