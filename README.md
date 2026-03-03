@@ -46,7 +46,7 @@ You can deploy this app for free using [Streamlit Community Cloud](https://strea
 - Matplotlib
 
 ## 🙏 Credits
-- Built by [Your Name]
+
 - Inspired by the open-source audio community
 
 ## 📄 License
